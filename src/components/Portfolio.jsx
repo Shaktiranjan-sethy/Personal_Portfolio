@@ -97,10 +97,10 @@ function PortFolio() {
             <div>
                 <h1 className="text-3xl font-bold mb-5" style={{ color: mode === 'dark' ? 'white' : '', }}>PortFolio</h1>
                 <span className=" underline font-semibold" style={{ color: mode === 'dark' ? 'white' : '', }}>Featured Projects</span>
-                <div className="grid grid-cols-2 md:grid-cols-4 sm:grid-cols-2 sm:ml-4 gap-5 lg:my-5 my-8">
+                <div className="grid grid-cols-1 md:grid-cols-4 sm:grid-cols-2 sm:ml-4 gap-5 lg:my-5 my-8">
                     {cardItem.map(({ id, logo, name, link,desc }) => (
                         <div
-                            className="row lg:w-[300px] sm:w-[280px] rounded-lg  p-1 gap-2"
+                            className="row lg:w-[300px] sm:w-[280px] w-[280px] mx-auto rounded-lg  p-1 gap-2"
                             key={id}
                             data-aos="flip-right"
                             data-aos-duration="1000"
